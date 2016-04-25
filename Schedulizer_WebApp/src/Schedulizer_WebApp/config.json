@@ -1,0 +1,8 @@
+{
+  "AppSettings": {
+    "SiteEmailAddres": "bcorn@bu.edu"
+  },
+  "Data": {
+    "CourseContextConnection":  "Server=(localdb)\\ProjectsV13;Database=SchedulizerDB;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  }
+}

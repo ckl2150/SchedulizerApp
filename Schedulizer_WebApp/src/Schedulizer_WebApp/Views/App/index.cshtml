@@ -1,0 +1,54 @@
+@model IEnumerable<Schedulizer_WebApp.Models.Schedule>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Welcome to BU Schedulizer</h2>
+        <h5>Schedulizer helps save you time during registration. Enter your courses below and Schedulizer will generate a best fit schedule for you!</h5>
+        <form class="form">
+            <div class="form-group">
+                <label for="collegeInput">College / School</label>
+                <input type="text" class="form-control" id="collegeInput" placeholder="ENG" />
+            </div>
+
+            <div class="form-group">
+                <label for="departmentInput">Department</label>
+                <input type="text" class="form-control" id="departmentInput" placeholder="EK" />
+            </div>
+
+            <div class="form-group">
+                <label for="courseInput">Course Number</label>
+                <input type="text" class="form-control" id="courseInput" placeholder="521" />
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                <i class="fa fa-plus"></i> Add More
+            </button>
+
+            <button type="submit" class="btn btn-primary">
+                <i class="fa fa-check"></i> Schedulize!
+            </button>
+
+        </form>
+    </div>
+
+    <div class="col-md-8">
+        <h2>Your Schedule</h2>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                <span class="sr-only">45% Complete</span>
+            </div>
+            
+        </div>
+        <ul>
+            @foreach (var schedule in Model)
+            {
+                <li>@schedule.Name (@schedule.Created.ToShortDateString())</li>
+
+            }
+        </ul>
+    </div>
+</div>
