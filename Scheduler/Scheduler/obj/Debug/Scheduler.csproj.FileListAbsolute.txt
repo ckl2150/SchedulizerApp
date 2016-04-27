@@ -1,0 +1,5 @@
+c:\users\conrad\documents\visual studio 2015\Projects\Scheduler\Scheduler\bin\Debug\Scheduler.pdb
+c:\users\conrad\documents\visual studio 2015\Projects\Scheduler\Scheduler\obj\Debug\Scheduler.pdb
+C:\Users\Conrad\Documents\Visual Studio 2015\Projects\Scheduler\Scheduler\bin\Debug\Scheduler.exe
+C:\Users\Conrad\Documents\Visual Studio 2015\Projects\Scheduler\Scheduler\obj\Debug\Scheduler.exe
+C:\Users\Conrad\Documents\Visual Studio 2015\Projects\Scheduler\Scheduler\obj\Debug\Scheduler.csprojResolveAssemblyReference.cache
